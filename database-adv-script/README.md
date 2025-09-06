@@ -48,3 +48,24 @@ This task demonstrates the use of both **non-correlated** and **correlated** sub
 
 - **subqueries.sql** → Contains the SQL queries for Task 1.
 - **README.md** → Updated documentation.
+
+---
+
+# Task 2 – Aggregations and Window Functions
+
+This task demonstrates the use of SQL aggregation functions and window functions.
+
+## Queries
+
+1. **Total Bookings per User**
+   - Uses `COUNT` with `GROUP BY` to calculate the number of bookings each user has made.
+   - Ordered by most active users first.
+
+2. **Rank Properties by Total Bookings**
+   - Uses `RANK()` window function to rank properties based on the number of bookings they received.
+   - Helps identify the most popular properties.
+
+## Files
+
+- **aggregations_and_window_functions.sql** → Contains the SQL queries for Task 2.
+- **README.md** → Updated documentation.
