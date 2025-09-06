@@ -27,3 +27,24 @@ This task demonstrates the use of different SQL joins on the Airbnb Clone databa
 Proceed to:
 - Task 1 → Subqueries
 - Task 2 → Aggregations and Window Functions
+
+---
+
+# Task 1 – Practice Subqueries
+
+This task demonstrates the use of both **non-correlated** and **correlated** subqueries.
+
+## Queries
+
+1. **Non-correlated Subquery**
+   - Finds all properties where the average rating is greater than 4.0.
+   - Uses an aggregation on the `reviews` table.
+
+2. **Correlated Subquery**
+   - Finds users who have made more than 3 bookings.
+   - The inner query references the outer query (`u.id`).
+
+## Files
+
+- **subqueries.sql** → Contains the SQL queries for Task 1.
+- **README.md** → Updated documentation.
