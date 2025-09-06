@@ -105,3 +105,25 @@ We refactored the query to reduce execution time by:
 
 - **perfomance.sql** → Contains the original query, analysis, and optimized query.
 - **optimization_report.md** → Documents performance analysis and improvements.
+
+---
+
+# Task 5 – Partitioning Large Tables
+
+## Overview
+This task focuses on improving query performance by partitioning the `bookings` table by `start_date`.  
+Partitioning ensures queries scan only the relevant data, improving execution time and scalability.
+
+## Deliverables
+- **partitioning.sql** → Contains SQL commands to create the partitioned table, partitions, and queries for performance testing.
+- **partition_performance.md** → Documents performance before and after partitioning, observed improvements, and conclusions.
+
+---
+
+# Task 6 – Monitor and Refine Database Performance
+
+## Overview
+This task required monitoring database performance using `EXPLAIN ANALYZE`, identifying bottlenecks, and refining schema/indexes to improve efficiency.
+
+## Deliverables
+- **performance_monitoring.md** → Documents monitored queries, execution plan analysis, optimizations, and results.
