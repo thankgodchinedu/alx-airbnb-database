@@ -59,13 +59,32 @@ This task demonstrates the use of SQL aggregation functions and window functions
 
 1. **Total Bookings per User**
    - Uses `COUNT` with `GROUP BY` to calculate the number of bookings each user has made.
-   - Ordered by most active users first.
+   - Ensures every user is included, even if they have zero bookings.
 
-2. **Rank Properties by Total Bookings**
-   - Uses `RANK()` window function to rank properties based on the number of bookings they received.
-   - Helps identify the most popular properties.
+2. **Rank Properties by Total Bookings (RANK)**
+   - Uses the `RANK()` window function to rank properties based on the number of bookings.
+   - Helps identify the most popular properties, handling ties properly (two properties can share the same rank).
+
+3. **Number Properties by Total Bookings (ROW_NUMBER)**
+   - Uses the `ROW_NUMBER()` window function to assign a sequential number to each property ordered by booking count.
+   - Unlike `RANK()`, it does not allow ties (each row gets a unique number).
 
 ## Files
 
-- **aggregations_and_window_functions.sql** → Contains the SQL queries for Task 2.
-- **README.md** → Updated documentation.
+- **aggregations_and_window_functions.sql** → Contains the SQL queries for Task 2, including:
+  - Aggregation with `COUNT` + `GROUP BY`
+  - Window functions with `RANK()` and `ROW_NUMBER()`
+- **README.md** → Updated documentation
+
+---
+
+# Task 3 – Implement Indexes for Optimization
+
+## Overview
+
+This task focuses on identifying high-usage columns and creating indexes to improve query performance.
+
+## Deliverables
+
+- **database_index.sql** → Contains `CREATE INDEX` commands.
+- **index_performance.md** → Explains the indexes created and documents performance improvements using `EXPLAIN` and `ANALYZE`.
