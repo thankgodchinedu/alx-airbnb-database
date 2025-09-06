@@ -88,3 +88,20 @@ This task focuses on identifying high-usage columns and creating indexes to impr
 
 - **database_index.sql** → Contains `CREATE INDEX` commands.
 - **index_performance.md** → Explains the indexes created and documents performance improvements using `EXPLAIN` and `ANALYZE`.
+
+---
+
+# Task 4 – Optimize Complex Queries
+
+## Overview
+
+This task focuses on analyzing a complex query that retrieves bookings along with user, property, and payment details.  
+We refactored the query to reduce execution time by:
+- Selecting only necessary columns.
+- Using indexes created in Task 3.
+- Verifying improvements with `EXPLAIN ANALYZE`.
+
+## Deliverables
+
+- **perfomance.sql** → Contains the original query, analysis, and optimized query.
+- **optimization_report.md** → Documents performance analysis and improvements.
